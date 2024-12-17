@@ -73,5 +73,35 @@ namespace KyTucXa.GUI
             SinhVienBus.Xoasv(dt);
             DanhSachSinhVien();
         }
+
+        private void btthem_Click(object sender, EventArgs e)
+        {
+            // viết nút thêm tăng mã sinh viên
+        }
+
+        private void btghi_Click(object sender, EventArgs e)
+        {
+            SinhVienDTO dt = new SinhVienDTO();
+            dt.MaSV = txtmasinhvien.Text;
+            dt.Hoten = txthoten.Text;
+            dt.GioiTinh = cbgioitinh.SelectedValue.ToString();
+            dt.MaPhong = txtmaphong.Text;
+            dt.Nganhhoc = cbnganhhoc.SelectedValue.ToString();
+
+            dt.Cccd = txtcccd.Text;
+            dt.Sdt = txtsdt.Text;
+            dt.Diachi = txtdiachi.Text;
+            dt.Email = txtemail.Text;
+
+            //thiếu BUS
+            SinhVienBus.themSV(dt);
+            DanhSachSinhVien();
+        }
+
+        private void btcapnhat_Click(object sender, EventArgs e)
+        {
+            // viết nút cập nhật
+
+        }
     }
 }

@@ -306,6 +306,7 @@
             this.btthem.TabIndex = 0;
             this.btthem.Text = "THÊM";
             this.btthem.UseVisualStyleBackColor = true;
+            this.btthem.Click += new System.EventHandler(this.btthem_Click);
             // 
             // btghi
             // 
@@ -315,6 +316,7 @@
             this.btghi.TabIndex = 1;
             this.btghi.Text = "GHI";
             this.btghi.UseVisualStyleBackColor = true;
+            this.btghi.Click += new System.EventHandler(this.btghi_Click);
             // 
             // btcapnhat
             // 
@@ -324,6 +326,7 @@
             this.btcapnhat.TabIndex = 2;
             this.btcapnhat.Text = "CẬP NHẬT";
             this.btcapnhat.UseVisualStyleBackColor = true;
+            this.btcapnhat.Click += new System.EventHandler(this.btcapnhat_Click);
             // 
             // btxoa
             // 
