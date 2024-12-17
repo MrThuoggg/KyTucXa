@@ -16,7 +16,7 @@ namespace KyTucXa.GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_QLPhong());
+            Application.Run(new Form_QLNhanVien());
         }
     }
 }

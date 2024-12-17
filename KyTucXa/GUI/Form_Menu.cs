@@ -42,8 +42,7 @@ namespace KyTucXa.GUI
 
         private void qlsinhvien_Click(object sender, EventArgs e)
         {
-            Form_QLSinhVien form_QLSinhVien = new Form_QLSinhVien();
-            form_QLSinhVien.Show();
+
         }
 
         private void btthongbao_Click(object sender, EventArgs e)
