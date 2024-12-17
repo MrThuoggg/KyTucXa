@@ -51,8 +51,10 @@
     <Compile Include="DAO\KetNoiCSDL.cs" />
     <Compile Include="DAO\QuanLiKTX_DAO.cs" />
     <Compile Include="DAO\QuanLiNhanVienDAO.cs" />
+    <Compile Include="DAO\SinhVienDAO.cs" />
     <Compile Include="DTO\QuanLiKTX_DTO.cs" />
     <Compile Include="DTO\QuanLiNhanVienDTO.cs" />
+    <Compile Include="DTO\SinhVienDTO.cs" />
     <Compile Include="GUI\Form_BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +91,12 @@
     <Compile Include="GUI\Form_QLPhong.Designer.cs">
       <DependentUpon>Form_QLPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Form_SinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_SinhVien.Designer.cs">
+      <DependentUpon>Form_SinhVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form_ThongBao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form_QLPhong.resx">
       <DependentUpon>Form_QLPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_SinhVien.resx">
+      <DependentUpon>Form_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form_ThongBao.resx">
       <DependentUpon>Form_ThongBao.cs</DependentUpon>
