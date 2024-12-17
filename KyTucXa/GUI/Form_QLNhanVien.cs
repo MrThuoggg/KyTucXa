@@ -57,13 +57,13 @@ namespace KyTucXa.GUI
 
         }
 
-        private void btthem_Click(object sender, EventArgs e)
+        /*private void btthem_Click(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
             dt = QuanLiNhanVienDAO.ThongTinNhanVienLonNhat();
             string manv = dt.Rows[0][0].ToString();
             txtmanv.Text = "NV" + (int.Parse(manv.Substring(manv.Length - 1)) + 1).ToString("000");
-        }
+        }*/
 
         private void btghi_Click(object sender, EventArgs e)
         {
@@ -107,6 +107,14 @@ namespace KyTucXa.GUI
             menu.ShowDialog();
 
             this.Close();
+        }
+
+        private void btthem_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = QuanLiNhanVienDAO.ThongTinNhanVienLonNhat();
+            string manv = dt.Rows[0][0].ToString();
+            txtmanv.Text = "NV" + (int.Parse(manv.Substring(manv.Length - 1)) + 1).ToString("000");
         }
     }
  }

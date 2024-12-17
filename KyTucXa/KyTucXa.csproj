@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BUS\QLNhanVienBUS.cs" />
     <Compile Include="BUS\QuanLiKTX_BUS.cs" />
+    <Compile Include="BUS\SinhVienBUS.cs" />
     <Compile Include="DAO\KetNoiCSDL.cs" />
     <Compile Include="DAO\QuanLiKTX_DAO.cs" />
     <Compile Include="DAO\QuanLiNhanVienDAO.cs" />

@@ -47,13 +47,13 @@ namespace KyTucXa.DAO
         }
         public static void Capnhatsinhvien(SinhVienDTO sinhVien)
         {
-            string sql = "UPDATE SinhVien SETHoTen = N'" + sinhVien.Hoten + "',NgaySinh = '" + sinhVien.Ngaysinh + "',GioiTinh = N'" + sinhVien.GioiTinh + "',Cccd = '" + sinhVien.Cccd + "',Sdt = '" + sinhVien.Sdt + "',DiaChi = N'" + sinhVien.Diachi + "',NganhHoc = N'" + sinhVien.Nganhhoc + "',Email = '" + sinhVien.Email + "',MaPhong = '" + sinhVien.MaPhong + "'WHERE MaSV = '" + sinhVien.MaSV + "';";
+            string sql = "UPDATE SinhVien SET HoTen = N'" + sinhVien.Hoten + "',NgaySinh = '" + sinhVien.Ngaysinh + "',GioiTinh = N'" + sinhVien.GioiTinh + "',Cccd = '" + sinhVien.Cccd + "',Sdt = '" + sinhVien.Sdt + "',DiaChi = N'" + sinhVien.Diachi + "',NganhHoc = N'" + sinhVien.Nganhhoc + "',Email = '" + sinhVien.Email + "',MaPhong = '" + sinhVien.MaPhong + "'WHERE MaSV = '" + sinhVien.MaSV + "';";
 
             KetNoiCSDL.ThucThiTruyVan(sql);
         }
-        public static DataTable Ghi(SinhVienDTO sinhVien)
+        public static DataTable MaSinhVienLonNhat()
         {
-            string sql = "Select top 1 MaSV from SinhVien order by SinhVien desc";
+            string sql = "Select top 1 MaSV from SinhVien order by MaSV desc";
             DataTable dt = new DataTable();
             dt = KetNoiCSDL.DocDuLieu(sql);
             return dt;

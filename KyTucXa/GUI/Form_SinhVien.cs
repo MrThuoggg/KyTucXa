@@ -1,4 +1,5 @@
-﻿using KyTucXa.DAO;
+﻿using KyTucXa.BUS;
+using KyTucXa.DAO;
 using KyTucXa.DTO;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -52,17 +54,17 @@ namespace KyTucXa.GUI
             txtmasinhvien.Text = dgdanhsach.CurrentRow.Cells[0].Value.ToString();
             txthoten.Text = dgdanhsach.CurrentRow.Cells[1].Value.ToString();
 
-            cbgioitinh.SelectedValue = dgdanhsach.CurrentRow.Cells[2].Value.ToString();
-            txtmaphong.Text = dgdanhsach.CurrentRow.Cells[3].Value.ToString();
+            cbgioitinh.SelectedValue = dgdanhsach.CurrentRow.Cells[3].Value.ToString();
+            txtmaphong.Text = dgdanhsach.CurrentRow.Cells[9].Value.ToString();
 
-            cbnganhhoc.SelectedValue = dgdanhsach.CurrentRow.Cells[4].Value.ToString();
-            dtngaysinh.Text = dgdanhsach.CurrentRow.Cells["NgaySinh"].Value.ToString();
+            cbnganhhoc.SelectedValue = dgdanhsach.CurrentRow.Cells[7].Value.ToString();
+            dtngaysinh.Value = DateTime.Parse(dgdanhsach.CurrentRow.Cells[2].Value.ToString());
 
-            txtcccd.Text = dgdanhsach.CurrentRow.Cells[5].Value.ToString();
-            txtsdt.Text = dgdanhsach.CurrentRow.Cells[6].Value.ToString();
+            txtcccd.Text = dgdanhsach.CurrentRow.Cells[4].Value.ToString();
+            txtsdt.Text = dgdanhsach.CurrentRow.Cells[5].Value.ToString();
 
             txtdiachi.Text = dgdanhsach.CurrentRow.Cells[6].Value.ToString();
-            txtemail.Text = dgdanhsach.CurrentRow.Cells[6].Value.ToString();
+            txtemail.Text = dgdanhsach.CurrentRow.Cells[8].Value.ToString();
         }
 
         private void btxoa_Click(object sender, EventArgs e)
@@ -70,13 +72,16 @@ namespace KyTucXa.GUI
             SinhVienDTO dt = new SinhVienDTO();
             dt.MaSV = txtmasinhvien.Text;
             // viết hàm bus 
-            SinhVienBus.Xoasv(dt);
+            SinhVienBUS.XoaSinhVien(dt);
             DanhSachSinhVien();
         }
 
         private void btthem_Click(object sender, EventArgs e)
         {
-            // viết nút thêm tăng mã sinh viên
+            DataTable dt = new DataTable();
+            dt = SinhVienDao.MaSinhVienLonNhat();
+            string manv = dt.Rows[0][0].ToString();
+            txtmasinhvien.Text = "SV" + (int.Parse(manv.Substring(manv.Length - 1)) + 1).ToString("000");
         }
 
         private void btghi_Click(object sender, EventArgs e)
@@ -87,20 +92,34 @@ namespace KyTucXa.GUI
             dt.GioiTinh = cbgioitinh.SelectedValue.ToString();
             dt.MaPhong = txtmaphong.Text;
             dt.Nganhhoc = cbnganhhoc.SelectedValue.ToString();
-
+            dt.Ngaysinh = dtngaysinh.Value.ToString("yyyy-MM-dd");
             dt.Cccd = txtcccd.Text;
             dt.Sdt = txtsdt.Text;
             dt.Diachi = txtdiachi.Text;
             dt.Email = txtemail.Text;
 
             //thiếu BUS
-            SinhVienBus.themSV(dt);
+            SinhVienBUS.ThemSV(dt);
             DanhSachSinhVien();
         }
 
         private void btcapnhat_Click(object sender, EventArgs e)
         {
-            // viết nút cập nhật
+            SinhVienDTO dt = new SinhVienDTO();
+            dt.MaSV = txtmasinhvien.Text;
+            dt.Hoten = txthoten.Text;
+            dt.GioiTinh = cbgioitinh.SelectedValue.ToString();
+            dt.MaPhong = txtmaphong.Text;
+            dt.Nganhhoc = cbnganhhoc.SelectedValue.ToString();
+            dt.Ngaysinh = dtngaysinh.Value.ToString("yyyy-MM-dd");
+            dt.Cccd = txtcccd.Text;
+            dt.Sdt = txtsdt.Text;
+            dt.Diachi = txtdiachi.Text;
+            dt.Email = txtemail.Text;
+
+            //thiếu BUS
+            SinhVienBUS.CapNhatSinhVien(dt);
+            DanhSachSinhVien();
 
         }
     }
