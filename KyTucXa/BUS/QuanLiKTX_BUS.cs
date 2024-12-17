@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace QL_KyTucXa.BUS
 {
     internal class QuanLiKTX_BUS
