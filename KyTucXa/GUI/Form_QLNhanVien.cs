@@ -10,6 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using KyTucXa.DAO;
 using KyTucXa.GUI;
+using KyTucXa.BUS;
+using KyTucXa.DTO;
+using QL_KyTucXa.BUS;
+using QL_KyTucXa.DTO;
 
 namespace KyTucXa.GUI
 {
@@ -52,5 +56,58 @@ namespace KyTucXa.GUI
             cbGT.SelectedValue = dgTT.CurrentRow.Cells[3].Value.ToString();
 
         }
+
+        private void btthem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            dt = QuanLiNhanVienDAO.ThongTinNhanVienLonNhat();
+            string manv = dt.Rows[0][0].ToString();
+            txtmanv.Text = "NV" + (int.Parse(manv.Substring(manv.Length - 1)) + 1).ToString("000");
+        }
+
+        private void btghi_Click(object sender, EventArgs e)
+        {
+            QuanLiNhanVienDTO nv = new QuanLiNhanVienDTO();
+            nv.manv = txtmanv.Text;
+            nv.hoten = txthoten.Text;
+            nv.cccd = txtcccd.Text;
+            nv.ns = dtNS.Value.ToString("yyyy-MM-dd");
+            nv.gt = cbGT.SelectedValue.ToString();
+            nv.email = txtemail.Text;
+            nv.sdt = txtsdt.Text;   
+            QLNhanVienBUS.ThemNV(nv);
+            ThongTinNhanVien();
+        }
+
+        private void btcapnhat_Click(object sender, EventArgs e)
+        {
+            QuanLiNhanVienDTO nv = new QuanLiNhanVienDTO();
+            nv.manv = txtmanv.Text;
+            nv.hoten = txthoten.Text;
+            nv.cccd = txtcccd.Text;
+            nv.ns = dtNS.Value.ToString("yyyy-MM-dd");
+            nv.gt = cbGT.SelectedValue.ToString();
+            nv.email = txtemail.Text;
+            nv.sdt = txtsdt.Text;
+            QLNhanVienBUS.CapNhatNhanVien(nv);
+            ThongTinNhanVien();
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            QuanLiNhanVienDTO nv = new QuanLiNhanVienDTO();
+            nv.manv = txtmanv.Text;
+            QLNhanVienBUS.XoaNhanVien(nv);
+            ThongTinNhanVien();
+        }
+
+        private void btthoat_Click(object sender, EventArgs e)
+        {
+            Form_Menu menu = new Form_Menu();
+            menu.ShowDialog();
+
+            this.Close();
+        }
     }
-}
+ }
+

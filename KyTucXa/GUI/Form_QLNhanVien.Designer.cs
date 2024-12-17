@@ -42,7 +42,6 @@
             this.btthem = new System.Windows.Forms.Button();
             this.btcapnhat = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
-            this.btin = new System.Windows.Forms.Button();
             this.btthoat = new System.Windows.Forms.Button();
             this.dgTT = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -53,6 +52,7 @@
             this.txtsdt = new System.Windows.Forms.TextBox();
             this.dtNS = new System.Windows.Forms.DateTimePicker();
             this.cbGT = new System.Windows.Forms.ComboBox();
+            this.btghi = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgTT)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -170,33 +170,27 @@
             this.btthem.TabIndex = 10;
             this.btthem.Text = "Thêm ";
             this.btthem.UseVisualStyleBackColor = true;
+            this.btthem.Click += new System.EventHandler(this.btthem_Click);
             // 
             // btcapnhat
             // 
-            this.btcapnhat.Location = new System.Drawing.Point(675, 166);
+            this.btcapnhat.Location = new System.Drawing.Point(675, 223);
             this.btcapnhat.Name = "btcapnhat";
             this.btcapnhat.Size = new System.Drawing.Size(75, 23);
             this.btcapnhat.TabIndex = 11;
             this.btcapnhat.Text = "Cập nhật";
             this.btcapnhat.UseVisualStyleBackColor = true;
+            this.btcapnhat.Click += new System.EventHandler(this.btcapnhat_Click);
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(675, 218);
+            this.btXoa.Location = new System.Drawing.Point(679, 265);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(75, 23);
             this.btXoa.TabIndex = 12;
             this.btXoa.Text = "Xóa ";
             this.btXoa.UseVisualStyleBackColor = true;
-            // 
-            // btin
-            // 
-            this.btin.Location = new System.Drawing.Point(675, 255);
-            this.btin.Name = "btin";
-            this.btin.Size = new System.Drawing.Size(75, 23);
-            this.btin.TabIndex = 13;
-            this.btin.Text = "In ";
-            this.btin.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btthoat
             // 
@@ -206,6 +200,7 @@
             this.btthoat.TabIndex = 14;
             this.btthoat.Text = "Thoát ";
             this.btthoat.UseVisualStyleBackColor = true;
+            this.btthoat.Click += new System.EventHandler(this.btthoat_Click);
             // 
             // dgTT
             // 
@@ -276,14 +271,24 @@
             this.cbGT.Size = new System.Drawing.Size(121, 21);
             this.cbGT.TabIndex = 23;
             // 
+            // btghi
+            // 
+            this.btghi.Location = new System.Drawing.Point(679, 170);
+            this.btghi.Name = "btghi";
+            this.btghi.Size = new System.Drawing.Size(75, 23);
+            this.btghi.TabIndex = 17;
+            this.btghi.Text = "Ghi";
+            this.btghi.UseVisualStyleBackColor = true;
+            this.btghi.Click += new System.EventHandler(this.btghi_Click);
+            // 
             // Form_QLNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 578);
+            this.Controls.Add(this.btghi);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btthoat);
-            this.Controls.Add(this.btin);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btcapnhat);
             this.Controls.Add(this.btthem);
@@ -326,9 +331,9 @@
         private System.Windows.Forms.Button btthem;
         private System.Windows.Forms.Button btcapnhat;
         private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Button btin;
         private System.Windows.Forms.Button btthoat;
         private System.Windows.Forms.DataGridView dgTT;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btghi;
     }
 }

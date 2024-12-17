@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using KyTucXa.DAO;
 using KyTucXa.GUI;
 using KyTucXa.DTO;
-
+using KyTucXa.BUS;
 namespace KyTucXa.DTO
 {
     internal class QuanLiNhanVienDTO
