@@ -33,7 +33,13 @@ namespace KyTucXa.GUI
         {
             DataTable dt = new DataTable();
             dt = QuanLiNhanVienDAO.ThongTinNhanVien();
-            cbGT.DataSource = dt;
+            var distinctRows = dt.AsEnumerable()
+                        .GroupBy(row => row.Field<string>("GioiTinh")) 
+                        .Select(g => g.First()) 
+                        .CopyToDataTable(); 
+
+            // Gán dữ liệu đã loại bỏ trùng vào ComboBox
+            cbGT.DataSource = distinctRows;
             cbGT.DisplayMember = "GioiTinh";
             cbGT.ValueMember = "GioiTinh";
         }

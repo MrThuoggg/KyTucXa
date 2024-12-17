@@ -122,5 +122,13 @@ namespace KyTucXa.GUI
             DanhSachSinhVien();
 
         }
+
+        private void btthoat_Click(object sender, EventArgs e)
+        {
+            Form_Menu menu = new Form_Menu();
+            menu.ShowDialog();
+
+            this.Close();
+        }
     }
 }

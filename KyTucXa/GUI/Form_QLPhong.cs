@@ -29,7 +29,13 @@ namespace KyTucXa.GUI
         {
             DataTable dt = new DataTable();
             dt = QuanLiKTX_DAO.ThongTinPhong();
-            cbtinhtrang.DataSource = dt;
+            var distinctRows = dt.AsEnumerable()
+                        .GroupBy(row => row.Field<string>("TinhTrang")) // Nhóm theo giá trị TinhTrang
+                        .Select(g => g.First()) // Lấy hàng đầu tiên của mỗi nhóm
+                        .CopyToDataTable(); // Chuyển kết quả thành DataTable
+
+            // Gán dữ liệu đã loại bỏ trùng vào ComboBox
+            cbtinhtrang.DataSource = distinctRows;
             cbtinhtrang.DisplayMember = "TinhTrang";
             cbtinhtrang.ValueMember = "TinhTrang";
         }

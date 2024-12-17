@@ -49,13 +49,16 @@
     <Compile Include="BUS\QLNhanVienBUS.cs" />
     <Compile Include="BUS\QuanLiKTX_BUS.cs" />
     <Compile Include="BUS\SinhVienBUS.cs" />
+    <Compile Include="BUS\ThongBaoBUS.cs" />
     <Compile Include="DAO\KetNoiCSDL.cs" />
     <Compile Include="DAO\QuanLiKTX_DAO.cs" />
     <Compile Include="DAO\QuanLiNhanVienDAO.cs" />
     <Compile Include="DAO\SinhVienDAO.cs" />
+    <Compile Include="DAO\ThongBaoDAO.cs" />
     <Compile Include="DTO\QuanLiKTX_DTO.cs" />
     <Compile Include="DTO\QuanLiNhanVienDTO.cs" />
     <Compile Include="DTO\SinhVienDTO.cs" />
+    <Compile Include="DTO\ThongBaoDTO.cs" />
     <Compile Include="GUI\Form_BaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
