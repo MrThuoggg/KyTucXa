@@ -71,7 +71,6 @@ namespace KyTucXa.GUI
         {
             SinhVienDTO dt = new SinhVienDTO();
             dt.MaSV = txtmasinhvien.Text;
-            // viết hàm bus 
             SinhVienBUS.XoaSinhVien(dt);
             DanhSachSinhVien();
         }
@@ -97,8 +96,6 @@ namespace KyTucXa.GUI
             dt.Sdt = txtsdt.Text;
             dt.Diachi = txtdiachi.Text;
             dt.Email = txtemail.Text;
-
-            //thiếu BUS
             SinhVienBUS.ThemSV(dt);
             DanhSachSinhVien();
         }
@@ -116,8 +113,6 @@ namespace KyTucXa.GUI
             dt.Sdt = txtsdt.Text;
             dt.Diachi = txtdiachi.Text;
             dt.Email = txtemail.Text;
-
-            //thiếu BUS
             SinhVienBUS.CapNhatSinhVien(dt);
             DanhSachSinhVien();
 

@@ -73,9 +73,9 @@
             this.groupBox1.Controls.Add(this.txtmaphong);
             this.groupBox1.Controls.Add(this.txttenphong);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(32, 55);
+            this.groupBox1.Location = new System.Drawing.Point(32, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(619, 267);
+            this.groupBox1.Size = new System.Drawing.Size(766, 267);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN";
@@ -167,9 +167,9 @@
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(680, 55);
+            this.groupBox2.Location = new System.Drawing.Point(804, 77);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(172, 267);
+            this.groupBox2.Size = new System.Drawing.Size(187, 267);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CHỨC NĂNG";
@@ -177,7 +177,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(21, 216);
+            this.button5.Location = new System.Drawing.Point(29, 216);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(127, 36);
             this.button5.TabIndex = 7;
@@ -188,7 +188,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(21, 166);
+            this.button4.Location = new System.Drawing.Point(29, 166);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(127, 36);
             this.button4.TabIndex = 6;
@@ -199,7 +199,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(21, 124);
+            this.button3.Location = new System.Drawing.Point(29, 124);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 36);
             this.button3.TabIndex = 5;
@@ -210,7 +210,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(21, 34);
+            this.button2.Location = new System.Drawing.Point(29, 34);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 35);
             this.button2.TabIndex = 4;
@@ -221,7 +221,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(21, 78);
+            this.button1.Location = new System.Drawing.Point(29, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 36);
             this.button1.TabIndex = 3;
@@ -233,7 +233,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(311, 9);
+            this.label6.Location = new System.Drawing.Point(396, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(223, 33);
             this.label6.TabIndex = 10;
@@ -242,11 +242,11 @@
             // dgdanhsach
             // 
             this.dgdanhsach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgdanhsach.Location = new System.Drawing.Point(32, 343);
+            this.dgdanhsach.Location = new System.Drawing.Point(32, 363);
             this.dgdanhsach.Name = "dgdanhsach";
             this.dgdanhsach.RowHeadersWidth = 51;
             this.dgdanhsach.RowTemplate.Height = 24;
-            this.dgdanhsach.Size = new System.Drawing.Size(820, 187);
+            this.dgdanhsach.Size = new System.Drawing.Size(959, 216);
             this.dgdanhsach.TabIndex = 11;
             this.dgdanhsach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdanhsach_CellContentClick);
             // 
@@ -254,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 561);
+            this.ClientSize = new System.Drawing.Size(1025, 630);
             this.Controls.Add(this.dgdanhsach);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox2);

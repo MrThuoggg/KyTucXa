@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -85,7 +87,7 @@
             this.groupBox1.Controls.Add(this.txthoten);
             this.groupBox1.Controls.Add(this.txtmasinhvien);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(34, 75);
+            this.groupBox1.Location = new System.Drawing.Point(32, 92);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -296,7 +298,7 @@
             this.groupBox2.Controls.Add(this.btghi);
             this.groupBox2.Controls.Add(this.btthem);
             this.groupBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(841, 75);
+            this.groupBox2.Location = new System.Drawing.Point(817, 92);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -308,7 +310,7 @@
             // btthoat
             // 
             this.btthoat.Location = new System.Drawing.Point(18, 203);
-            this.btthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btthoat.Name = "btthoat";
             this.btthoat.Size = new System.Drawing.Size(136, 31);
             this.btthoat.TabIndex = 4;
@@ -362,13 +364,29 @@
             // 
             // dgdanhsach
             // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgdanhsach.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgdanhsach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgdanhsach.Location = new System.Drawing.Point(34, 349);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgdanhsach.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgdanhsach.Location = new System.Drawing.Point(32, 363);
             this.dgdanhsach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgdanhsach.Name = "dgdanhsach";
             this.dgdanhsach.RowHeadersWidth = 51;
             this.dgdanhsach.RowTemplate.Height = 24;
-            this.dgdanhsach.Size = new System.Drawing.Size(981, 194);
+            this.dgdanhsach.Size = new System.Drawing.Size(959, 216);
             this.dgdanhsach.TabIndex = 2;
             this.dgdanhsach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdanhsach_CellContentClick);
             // 
@@ -376,7 +394,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(400, 27);
+            this.label11.Location = new System.Drawing.Point(365, 31);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(262, 33);
             this.label11.TabIndex = 14;
@@ -386,7 +404,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 574);
+            this.ClientSize = new System.Drawing.Size(1025, 630);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dgdanhsach);
             this.Controls.Add(this.groupBox2);

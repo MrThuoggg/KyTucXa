@@ -16,5 +16,16 @@ namespace KyTucXa.GUI
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form_Menu form_Menu = new Form_Menu();
+            form_Menu.Show();
+        }
     }
 }

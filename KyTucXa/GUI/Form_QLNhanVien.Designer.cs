@@ -61,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(383, 9);
+            this.label1.Location = new System.Drawing.Point(361, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(281, 33);
@@ -162,11 +162,11 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(33, 52);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(33, 95);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(759, 223);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(773, 244);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN NHÂN VIÊN";
@@ -176,9 +176,9 @@
             this.cbGT.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGT.FormattingEnabled = true;
             this.cbGT.Location = new System.Drawing.Point(179, 168);
-            this.cbGT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbGT.Margin = new System.Windows.Forms.Padding(4);
             this.cbGT.Name = "cbGT";
-            this.cbGT.Size = new System.Drawing.Size(195, 31);
+            this.cbGT.Size = new System.Drawing.Size(207, 31);
             this.cbGT.TabIndex = 23;
             // 
             // dtNS
@@ -186,45 +186,45 @@
             this.dtNS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtNS.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtNS.Location = new System.Drawing.Point(536, 39);
-            this.dtNS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtNS.Margin = new System.Windows.Forms.Padding(4);
             this.dtNS.Name = "dtNS";
-            this.dtNS.Size = new System.Drawing.Size(195, 31);
+            this.dtNS.Size = new System.Drawing.Size(207, 31);
             this.dtNS.TabIndex = 22;
             // 
             // txtsdt
             // 
             this.txtsdt.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsdt.Location = new System.Drawing.Point(536, 120);
-            this.txtsdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtsdt.Margin = new System.Windows.Forms.Padding(4);
             this.txtsdt.Name = "txtsdt";
-            this.txtsdt.Size = new System.Drawing.Size(195, 31);
+            this.txtsdt.Size = new System.Drawing.Size(207, 31);
             this.txtsdt.TabIndex = 21;
             // 
             // txtemail
             // 
             this.txtemail.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.Location = new System.Drawing.Point(536, 81);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(195, 31);
+            this.txtemail.Size = new System.Drawing.Size(207, 31);
             this.txtemail.TabIndex = 20;
             // 
             // txtcccd
             // 
             this.txtcccd.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcccd.Location = new System.Drawing.Point(179, 122);
-            this.txtcccd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtcccd.Margin = new System.Windows.Forms.Padding(4);
             this.txtcccd.Name = "txtcccd";
-            this.txtcccd.Size = new System.Drawing.Size(195, 31);
+            this.txtcccd.Size = new System.Drawing.Size(207, 31);
             this.txtcccd.TabIndex = 19;
             // 
             // txthoten
             // 
             this.txthoten.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txthoten.Location = new System.Drawing.Point(179, 78);
-            this.txthoten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txthoten.Margin = new System.Windows.Forms.Padding(4);
             this.txthoten.Name = "txthoten";
-            this.txthoten.Size = new System.Drawing.Size(195, 31);
+            this.txthoten.Size = new System.Drawing.Size(207, 31);
             this.txthoten.TabIndex = 18;
             // 
             // txtmanv
@@ -232,9 +232,9 @@
             this.txtmanv.Enabled = false;
             this.txtmanv.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmanv.Location = new System.Drawing.Point(179, 39);
-            this.txtmanv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmanv.Margin = new System.Windows.Forms.Padding(4);
             this.txtmanv.Name = "txtmanv";
-            this.txtmanv.Size = new System.Drawing.Size(195, 31);
+            this.txtmanv.Size = new System.Drawing.Size(207, 31);
             this.txtmanv.TabIndex = 17;
             // 
             // groupBox3
@@ -245,7 +245,7 @@
             this.groupBox3.Controls.Add(this.btcapnhat);
             this.groupBox3.Controls.Add(this.btthoat);
             this.groupBox3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(817, 33);
+            this.groupBox3.Location = new System.Drawing.Point(813, 95);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -257,7 +257,7 @@
             // btthem
             // 
             this.btthem.Location = new System.Drawing.Point(25, 30);
-            this.btthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btthem.Margin = new System.Windows.Forms.Padding(4);
             this.btthem.Name = "btthem";
             this.btthem.Size = new System.Drawing.Size(129, 35);
             this.btthem.TabIndex = 18;
@@ -269,7 +269,7 @@
             // 
             this.btXoa.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.btXoa.Location = new System.Drawing.Point(25, 156);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(129, 34);
             this.btXoa.TabIndex = 12;
@@ -281,7 +281,7 @@
             // 
             this.btghi.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.btghi.Location = new System.Drawing.Point(25, 69);
-            this.btghi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btghi.Margin = new System.Windows.Forms.Padding(4);
             this.btghi.Name = "btghi";
             this.btghi.Size = new System.Drawing.Size(129, 35);
             this.btghi.TabIndex = 17;
@@ -293,7 +293,7 @@
             // 
             this.btcapnhat.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.btcapnhat.Location = new System.Drawing.Point(25, 114);
-            this.btcapnhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btcapnhat.Margin = new System.Windows.Forms.Padding(4);
             this.btcapnhat.Name = "btcapnhat";
             this.btcapnhat.Size = new System.Drawing.Size(129, 34);
             this.btcapnhat.TabIndex = 11;
@@ -305,7 +305,7 @@
             // 
             this.btthoat.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold);
             this.btthoat.Location = new System.Drawing.Point(25, 198);
-            this.btthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btthoat.Name = "btthoat";
             this.btthoat.Size = new System.Drawing.Size(129, 34);
             this.btthoat.TabIndex = 14;
@@ -316,11 +316,11 @@
             // dgTT
             // 
             this.dgTT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgTT.Location = new System.Drawing.Point(33, 296);
-            this.dgTT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgTT.Location = new System.Drawing.Point(32, 363);
+            this.dgTT.Margin = new System.Windows.Forms.Padding(4);
             this.dgTT.Name = "dgTT";
             this.dgTT.RowHeadersWidth = 51;
-            this.dgTT.Size = new System.Drawing.Size(963, 179);
+            this.dgTT.Size = new System.Drawing.Size(959, 216);
             this.dgTT.TabIndex = 15;
             this.dgTT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgTT_CellContentClick);
             // 
@@ -328,7 +328,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 493);
+            this.ClientSize = new System.Drawing.Size(1025, 630);
             this.Controls.Add(this.dgTT);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
