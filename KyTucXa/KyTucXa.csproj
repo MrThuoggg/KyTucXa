@@ -71,6 +71,12 @@
     <Compile Include="GUI\Form_DangNhap.Designer.cs">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Form_DienNuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form_DienNuoc.Designer.cs">
+      <DependentUpon>Form_DienNuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Form_DKPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form_DangNhap.resx">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form_DienNuoc.resx">
+      <DependentUpon>Form_DienNuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Form_DKPhong.resx">
       <DependentUpon>Form_DKPhong.cs</DependentUpon>
