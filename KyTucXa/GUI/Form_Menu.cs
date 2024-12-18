@@ -56,5 +56,10 @@ namespace KyTucXa.GUI
             Form_BaoCao form_BaoCao = new Form_BaoCao();
             form_BaoCao.Show();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

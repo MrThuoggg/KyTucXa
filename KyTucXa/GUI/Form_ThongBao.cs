@@ -45,6 +45,7 @@ namespace KyTucXa.GUI
         {
             ThongTinTB();
             DanhSachLoaiTB();
+            txtMaTB.Enabled = false;
         }
 
         private void dgTB_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -99,6 +100,10 @@ namespace KyTucXa.GUI
             menu.ShowDialog();
 
             this.Close();
+        }
+
+        private void txtMaTB_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
