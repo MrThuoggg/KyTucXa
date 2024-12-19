@@ -16,5 +16,10 @@ namespace KyTucXa.GUI
         {
             InitializeComponent();
         }
+
+        private void Form_DKPhong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
