@@ -222,7 +222,7 @@
             // btXoa
             // 
             this.btXoa.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(21, 166);
+            this.btXoa.Location = new System.Drawing.Point(20, 171);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(127, 36);
             this.btXoa.TabIndex = 6;
