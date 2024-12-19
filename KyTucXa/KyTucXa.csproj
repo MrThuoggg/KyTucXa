@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DangKyPhong.cs" />
     <Compile Include="BUS\QLNhanVienBUS.cs" />
     <Compile Include="BUS\QuanLiKTX_BUS.cs" />
     <Compile Include="BUS\SinhVienBUS.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="DAO\QuanLiNhanVienDAO.cs" />
     <Compile Include="DAO\SinhVienDAO.cs" />
     <Compile Include="DAO\ThongBaoDAO.cs" />
+    <Compile Include="DTO\DangKyPhongDTO.cs" />
     <Compile Include="DTO\QuanLiKTX_DTO.cs" />
     <Compile Include="DTO\QuanLiNhanVienDTO.cs" />
     <Compile Include="DTO\SinhVienDTO.cs" />

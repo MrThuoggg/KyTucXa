@@ -16,10 +16,22 @@ namespace KyTucXa.DAO
     {
         public static DataTable ThongTinDKPhong()
         {
-            string sql = "Select MaDK, sv.MaSV,HoTen,p.MaPhong,TenPhong, NgayDK,NgayBD,NgayKT From Phong p, SinhVien sv, DangKyPhong dkp where sv.MaSV = dkp.MaSV and p.MaPhong = dkp.MaPhong";
+            string sql = "SELECT * FROM DangKyPhong;";
             DataTable dt = new DataTable();
             dt = KetNoiCSDL.DocDuLieu(sql);
             return dt;
+        }
+        public static DataTable MaDKPhongLonNhat()
+        {
+            string sql = "Select top 1 MaDK from DangKyPhong order by MaDK desc";
+            DataTable dt = new DataTable();
+            dt = KetNoiCSDL.DocDuLieu(sql);
+            return dt;
+        }
+        public static void ThemDKPhong(DangKyPhongDTO dkp)
+        {
+            string sql = "INSERT INTO DangKyPhong (MaDK, MaSV,HoTen, MaPhong,TenPhong, NgayDK, NgayBD, NgayKT) VALUES ('"+dkp.MaDK+"', '"+dkp.MaSV+"', N'"+dkp.HoTen+"', '"+dkp.MaPhong+"', N'"+dkp.TenPhong+"', '"+dkp.NgayDK+"', '"+dkp.NgayBD+"', '"+dkp.NgayKT+"');";
+            KetNoiCSDL.ThucThiTruyVan(sql);
         }
     }
 }

@@ -8,7 +8,6 @@ using System.Windows.Forms;
 using System.Data;
 using KyTucXa.DAO;
 using KyTucXa.DTO;
-using KyTucXa.GUI;
 using KyTucXa.BUS;
 using QL_KyTucXa.DAO;
 using QL_KyTucXa.DTO;

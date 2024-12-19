@@ -49,6 +49,10 @@
             this.btCapNhat = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.btGhi = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtMaPhong = new System.Windows.Forms.TextBox();
+            this.txtMaSV = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGDKPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -67,6 +71,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtMaSV);
+            this.groupBox1.Controls.Add(this.txtMaPhong);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
@@ -90,7 +98,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(397, 196);
+            this.label8.Location = new System.Drawing.Point(408, 214);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 23);
             this.label8.TabIndex = 9;
@@ -99,7 +107,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(397, 122);
+            this.label7.Location = new System.Drawing.Point(404, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 23);
             this.label7.TabIndex = 9;
@@ -108,7 +116,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(394, 52);
+            this.label6.Location = new System.Drawing.Point(7, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 23);
             this.label6.TabIndex = 9;
@@ -117,7 +125,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 196);
+            this.label4.Location = new System.Drawing.Point(404, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(112, 23);
             this.label4.TabIndex = 7;
@@ -126,7 +134,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 126);
+            this.label3.Location = new System.Drawing.Point(13, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 23);
             this.label3.TabIndex = 6;
@@ -143,35 +151,35 @@
             // 
             // dtNgayKT
             // 
-            this.dtNgayKT.Location = new System.Drawing.Point(546, 190);
+            this.dtNgayKT.Location = new System.Drawing.Point(553, 208);
             this.dtNgayKT.Name = "dtNgayKT";
             this.dtNgayKT.Size = new System.Drawing.Size(208, 31);
             this.dtNgayKT.TabIndex = 3;
             // 
             // dtNBD
             // 
-            this.dtNBD.Location = new System.Drawing.Point(546, 116);
+            this.dtNBD.Location = new System.Drawing.Point(553, 153);
             this.dtNBD.Name = "dtNBD";
             this.dtNBD.Size = new System.Drawing.Size(208, 31);
             this.dtNBD.TabIndex = 3;
             // 
             // dtNDK
             // 
-            this.dtNDK.Location = new System.Drawing.Point(546, 52);
+            this.dtNDK.Location = new System.Drawing.Point(150, 208);
             this.dtNDK.Name = "dtNDK";
             this.dtNDK.Size = new System.Drawing.Size(208, 31);
             this.dtNDK.TabIndex = 3;
             // 
             // txtTenPhong
             // 
-            this.txtTenPhong.Location = new System.Drawing.Point(133, 193);
+            this.txtTenPhong.Location = new System.Drawing.Point(541, 103);
             this.txtTenPhong.Name = "txtTenPhong";
             this.txtTenPhong.Size = new System.Drawing.Size(219, 31);
             this.txtTenPhong.TabIndex = 2;
             // 
             // txthoten
             // 
-            this.txthoten.Location = new System.Drawing.Point(133, 121);
+            this.txthoten.Location = new System.Drawing.Point(139, 153);
             this.txthoten.Name = "txthoten";
             this.txthoten.Size = new System.Drawing.Size(219, 31);
             this.txthoten.TabIndex = 1;
@@ -248,6 +256,7 @@
             this.btThem.TabIndex = 4;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btGhi
             // 
@@ -258,6 +267,39 @@
             this.btGhi.TabIndex = 3;
             this.btGhi.Text = "Ghi";
             this.btGhi.UseVisualStyleBackColor = true;
+            this.btGhi.Click += new System.EventHandler(this.btGhi_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 23);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Mã SV : ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(404, 60);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 23);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Mã Phòng : ";
+            // 
+            // txtMaPhong
+            // 
+            this.txtMaPhong.Location = new System.Drawing.Point(541, 52);
+            this.txtMaPhong.Name = "txtMaPhong";
+            this.txtMaPhong.Size = new System.Drawing.Size(211, 31);
+            this.txtMaPhong.TabIndex = 12;
+            // 
+            // txtMaSV
+            // 
+            this.txtMaSV.Location = new System.Drawing.Point(133, 103);
+            this.txtMaSV.Name = "txtMaSV";
+            this.txtMaSV.Size = new System.Drawing.Size(219, 31);
+            this.txtMaSV.TabIndex = 13;
             // 
             // Form_DKPhong
             // 
@@ -302,5 +344,9 @@
         private System.Windows.Forms.Button btCapNhat;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Button btGhi;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtMaSV;
+        private System.Windows.Forms.TextBox txtMaPhong;
     }
 }
