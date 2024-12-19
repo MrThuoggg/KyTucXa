@@ -14,6 +14,12 @@ namespace KyTucXa.DAO
 {
     internal class DangKyPhongDAO
     {
-        
+        public static DataTable ThongTinDKPhong()
+        {
+            string sql = "Select MaDK, sv.MaSV,HoTen,p.MaPhong,TenPhong, NgayDK,NgayBD,NgayKT From Phong p, SinhVien sv, DangKyPhong dkp where sv.MaSV = dkp.MaSV and p.MaPhong = dkp.MaPhong";
+            DataTable dt = new DataTable();
+            dt = KetNoiCSDL.DocDuLieu(sql);
+            return dt;
+        }
     }
 }
