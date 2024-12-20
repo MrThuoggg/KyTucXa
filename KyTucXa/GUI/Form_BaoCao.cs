@@ -27,5 +27,11 @@ namespace KyTucXa.GUI
             Form_Menu form_Menu = new Form_Menu();
             form_Menu.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fr_Phong fr= new fr_Phong();
+            fr.Show();
+        }
     }
 }
