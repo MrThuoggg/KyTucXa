@@ -16,7 +16,7 @@ namespace QL_KyTucXa.DAO
         {
             try
             {
-                string sqlcon = @"Data Source=LAPTOP-UP35SKHF\TUANBAO;Initial Catalog=QLKyTucXa;Integrated Security=True";
+                string sqlcon = @"Data Source=LAPTOP-PGG5QET7\SQLEXPRESS02;Initial Catalog=QLKyTucXa;Integrated Security=True";
                 cnn.ConnectionString = sqlcon;
                 if (cnn.State == ConnectionState.Closed)
                     cnn.Open();
