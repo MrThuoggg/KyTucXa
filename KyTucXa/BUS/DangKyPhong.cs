@@ -11,18 +11,46 @@ namespace KyTucXa.BUS
 {
     internal class DangKyPhong
     {
-        public static void ThemPhong(DangKyPhongDTO dkp)
+        public static void DangKy(DangKyPhongDTO dk)
         {
             try
             {
-                if (MessageBox.Show("Bạn có chắc muốn đăng kí phòng này không?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Bạn có chắc muốn đăng ký phòng này không?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    DangKyPhongDAO.GhiDKPhong(dkp);
+                    DangKyPhongDAO.DangKyPhong(dk);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Thêm đăng kí không thành công!");
+                MessageBox.Show("Đăng ký phòng không thành công!");
+            }
+        }
+        public static void CapNhatDK(DangKyPhongDTO dk)
+        {
+            try
+            {
+                if (MessageBox.Show("Bạn có chắc muốn cập nhật này không?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    DangKyPhongDAO.Capnhatdangky(dk);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Cập nhật không thành công!");
+            }
+        }
+        public static void XoaDangKy(DangKyPhongDTO dk)
+        {
+            try
+            {
+                if (MessageBox.Show("Bạn có chắc muốn xóa đăng ký phòng này không ?", "Xác nhận", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    DangKyPhongDAO.XoaDangKyPhong(dk);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xóa đăng ký phòng không thành công!");
             }
         }
     }

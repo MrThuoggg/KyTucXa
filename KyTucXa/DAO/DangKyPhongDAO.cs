@@ -28,9 +28,19 @@ namespace KyTucXa.DAO
             dt = KetNoiCSDL.DocDuLieu(sql);
             return dt;
         }
-        public static void ThemDKPhong(DangKyPhongDTO dkp)
+        public static void DangKyPhong(DangKyPhongDTO dk)
         {
-            string sql = "INSERT INTO DangKyPhong (MaDK, MaSV,HoTen, MaPhong,TenPhong, NgayDK, NgayBD, NgayKT) VALUES ('"+dkp.MaDK+"', '"+dkp.MaSV+"', N'"+dkp.HoTen+"', '"+dkp.MaPhong+"', N'"+dkp.TenPhong+"', '"+dkp.NgayDK+"', '"+dkp.NgayBD+"', '"+dkp.NgayKT+"');";
+            string sql = "INSERT INTO DangKyPhong (MaDK, MaSV, HoTen, MaPhong, TenPhong, NgayDK, NgayBD, NgayKT) VALUES ('"+dk.madk+"', '"+dk.masv+"', N'"+dk.hoten+"','"+dk.maphong+"',  N'"+dk.tenphong+"','"+dk.ngaydk+"', '"+dk.ngaybd+"', '"+dk.ngaykt+"');";
+            KetNoiCSDL.ThucThiTruyVan(sql);
+        }
+        public static void Capnhatdangky(DangKyPhongDTO dk)
+        {
+            string sql = "UPDATE DangKyPhong SET MaSV = N'" + dk.masv + "',NgayDK = N'" + dk.ngaydk + "',NgayBD = N'" + dk.ngaybd + "',NgayKT = N'" + dk.ngaykt + "',MaPhong = N'" + dk.maphong + "' WHERE MaDK = '" + dk.madk + "';";
+            KetNoiCSDL.ThucThiTruyVan(sql);
+        }
+        public static void XoaDangKyPhong(DangKyPhongDTO dk)
+        {
+            string sql = "delete from DangKyPhong where MaDK ='" + dk.madk + "'";
             KetNoiCSDL.ThucThiTruyVan(sql);
         }
     }

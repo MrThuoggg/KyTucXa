@@ -30,6 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtMaSV = new System.Windows.Forms.TextBox();
+            this.txtMaPhong = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,10 +53,6 @@
             this.btCapNhat = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.btGhi = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtMaPhong = new System.Windows.Forms.TextBox();
-            this.txtMaSV = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGDKPhong)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -94,6 +94,38 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "THÔNG TIN ĐĂNG KÝ";
+            // 
+            // txtMaSV
+            // 
+            this.txtMaSV.Location = new System.Drawing.Point(133, 103);
+            this.txtMaSV.Name = "txtMaSV";
+            this.txtMaSV.Size = new System.Drawing.Size(219, 31);
+            this.txtMaSV.TabIndex = 13;
+            // 
+            // txtMaPhong
+            // 
+            this.txtMaPhong.Location = new System.Drawing.Point(541, 52);
+            this.txtMaPhong.Name = "txtMaPhong";
+            this.txtMaPhong.Size = new System.Drawing.Size(211, 31);
+            this.txtMaPhong.TabIndex = 12;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(404, 60);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(113, 23);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Mã Phòng : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 111);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 23);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Mã SV : ";
             // 
             // label8
             // 
@@ -236,6 +268,7 @@
             this.btXoa.TabIndex = 6;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btCapNhat
             // 
@@ -246,6 +279,7 @@
             this.btCapNhat.TabIndex = 5;
             this.btCapNhat.Text = "Cập nhật";
             this.btCapNhat.UseVisualStyleBackColor = true;
+            this.btCapNhat.Click += new System.EventHandler(this.btCapNhat_Click);
             // 
             // btThem
             // 
@@ -268,38 +302,6 @@
             this.btGhi.Text = "Ghi";
             this.btGhi.UseVisualStyleBackColor = true;
             this.btGhi.Click += new System.EventHandler(this.btGhi_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 23);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Mã SV : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(404, 60);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 23);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Mã Phòng : ";
-            // 
-            // txtMaPhong
-            // 
-            this.txtMaPhong.Location = new System.Drawing.Point(541, 52);
-            this.txtMaPhong.Name = "txtMaPhong";
-            this.txtMaPhong.Size = new System.Drawing.Size(211, 31);
-            this.txtMaPhong.TabIndex = 12;
-            // 
-            // txtMaSV
-            // 
-            this.txtMaSV.Location = new System.Drawing.Point(133, 103);
-            this.txtMaSV.Name = "txtMaSV";
-            this.txtMaSV.Size = new System.Drawing.Size(219, 31);
-            this.txtMaSV.TabIndex = 13;
             // 
             // Form_DKPhong
             // 
