@@ -45,10 +45,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.PapayaWhip;
             this.groupBox1.Controls.Add(this.btthongke);
             this.groupBox1.Controls.Add(this.btthongbao);
             this.groupBox1.Controls.Add(this.btdangkyphong);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
             this.groupBox1.Location = new System.Drawing.Point(36, 47);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(331, 348);
@@ -58,8 +60,9 @@
             // 
             // btthongke
             // 
-            this.btthongke.BackColor = System.Drawing.SystemColors.Info;
+            this.btthongke.BackColor = System.Drawing.Color.Salmon;
             this.btthongke.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btthongke.ForeColor = System.Drawing.Color.MediumBlue;
             this.btthongke.Location = new System.Drawing.Point(26, 246);
             this.btthongke.Name = "btthongke";
             this.btthongke.Size = new System.Drawing.Size(270, 77);
@@ -70,8 +73,9 @@
             // 
             // btthongbao
             // 
-            this.btthongbao.BackColor = System.Drawing.SystemColors.Info;
+            this.btthongbao.BackColor = System.Drawing.Color.Salmon;
             this.btthongbao.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btthongbao.ForeColor = System.Drawing.Color.MediumBlue;
             this.btthongbao.Location = new System.Drawing.Point(26, 145);
             this.btthongbao.Name = "btthongbao";
             this.btthongbao.Size = new System.Drawing.Size(270, 77);
@@ -82,8 +86,9 @@
             // 
             // btdangkyphong
             // 
-            this.btdangkyphong.BackColor = System.Drawing.SystemColors.Info;
+            this.btdangkyphong.BackColor = System.Drawing.Color.Salmon;
             this.btdangkyphong.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btdangkyphong.ForeColor = System.Drawing.Color.MediumBlue;
             this.btdangkyphong.Location = new System.Drawing.Point(26, 49);
             this.btdangkyphong.Name = "btdangkyphong";
             this.btdangkyphong.Size = new System.Drawing.Size(270, 77);
@@ -94,10 +99,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.PapayaWhip;
             this.groupBox2.Controls.Add(this.qlsinhvien);
             this.groupBox2.Controls.Add(this.btquanlyphong);
             this.groupBox2.Controls.Add(this.btquanlynhanvien);
             this.groupBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(445, 47);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(331, 348);
@@ -107,8 +114,9 @@
             // 
             // qlsinhvien
             // 
-            this.qlsinhvien.BackColor = System.Drawing.SystemColors.Info;
+            this.qlsinhvien.BackColor = System.Drawing.Color.Salmon;
             this.qlsinhvien.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qlsinhvien.ForeColor = System.Drawing.Color.MediumBlue;
             this.qlsinhvien.Location = new System.Drawing.Point(35, 246);
             this.qlsinhvien.Name = "qlsinhvien";
             this.qlsinhvien.Size = new System.Drawing.Size(270, 77);
@@ -119,8 +127,9 @@
             // 
             // btquanlyphong
             // 
-            this.btquanlyphong.BackColor = System.Drawing.SystemColors.Info;
+            this.btquanlyphong.BackColor = System.Drawing.Color.Salmon;
             this.btquanlyphong.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btquanlyphong.ForeColor = System.Drawing.Color.MediumBlue;
             this.btquanlyphong.Location = new System.Drawing.Point(35, 145);
             this.btquanlyphong.Name = "btquanlyphong";
             this.btquanlyphong.Size = new System.Drawing.Size(270, 77);
@@ -131,8 +140,9 @@
             // 
             // btquanlynhanvien
             // 
-            this.btquanlynhanvien.BackColor = System.Drawing.SystemColors.Info;
+            this.btquanlynhanvien.BackColor = System.Drawing.Color.Salmon;
             this.btquanlynhanvien.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btquanlynhanvien.ForeColor = System.Drawing.Color.MediumBlue;
             this.btquanlynhanvien.Location = new System.Drawing.Point(35, 49);
             this.btquanlynhanvien.Name = "btquanlynhanvien";
             this.btquanlynhanvien.Size = new System.Drawing.Size(270, 77);
@@ -143,7 +153,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.đĂNGXUẤTToolStripMenuItem});
@@ -156,7 +166,9 @@
             // 
             // đĂNGXUẤTToolStripMenuItem
             // 
+            this.đĂNGXUẤTToolStripMenuItem.BackColor = System.Drawing.Color.Tomato;
             this.đĂNGXUẤTToolStripMenuItem.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Bold);
+            this.đĂNGXUẤTToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.đĂNGXUẤTToolStripMenuItem.Name = "đĂNGXUẤTToolStripMenuItem";
             this.đĂNGXUẤTToolStripMenuItem.Size = new System.Drawing.Size(149, 31);
             this.đĂNGXUẤTToolStripMenuItem.Text = "ĐĂNG XUẤT";
@@ -166,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(809, 424);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

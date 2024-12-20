@@ -55,29 +55,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(420, 34);
+            this.label1.BackColor = System.Drawing.Color.SkyBlue;
+            this.label1.Font = new System.Drawing.Font("Cambria", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(410, 22);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 33);
+            this.label1.Size = new System.Drawing.Size(226, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "THÔNG BÁO";
             // 
             // dgTB
             // 
             this.dgTB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgTB.Location = new System.Drawing.Point(2, 34);
+            this.dgTB.Location = new System.Drawing.Point(0, 36);
             this.dgTB.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.dgTB.Name = "dgTB";
             this.dgTB.RowHeadersWidth = 51;
-            this.dgTB.Size = new System.Drawing.Size(969, 216);
+            this.dgTB.Size = new System.Drawing.Size(969, 230);
             this.dgTB.TabIndex = 1;
             this.dgTB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgTB_CellContentClick);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgTB);
-            this.groupBox1.Location = new System.Drawing.Point(22, 349);
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
+            this.groupBox1.Location = new System.Drawing.Point(22, 359);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -88,6 +91,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.LavenderBlush;
             this.groupBox2.Controls.Add(this.txtnoidung);
             this.groupBox2.Controls.Add(this.cbLoaiTB);
             this.groupBox2.Controls.Add(this.dtNgayTB);
@@ -96,6 +100,7 @@
             this.groupBox2.Controls.Add(this.txtMaTB);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(24, 85);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.groupBox2.Name = "groupBox2";
@@ -134,6 +139,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label5.ForeColor = System.Drawing.Color.Blue;
             this.label5.Location = new System.Drawing.Point(26, 207);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
@@ -144,6 +151,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(26, 156);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
@@ -163,6 +172,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
             this.label3.Location = new System.Drawing.Point(26, 98);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
@@ -173,6 +184,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(26, 44);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
@@ -182,6 +195,7 @@
             // 
             // btthoat
             // 
+            this.btthoat.ForeColor = System.Drawing.Color.Blue;
             this.btthoat.Location = new System.Drawing.Point(30, 219);
             this.btthoat.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btthoat.Name = "btthoat";
@@ -193,6 +207,7 @@
             // 
             // btxoa
             // 
+            this.btxoa.ForeColor = System.Drawing.Color.Blue;
             this.btxoa.Location = new System.Drawing.Point(30, 174);
             this.btxoa.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btxoa.Name = "btxoa";
@@ -204,6 +219,7 @@
             // 
             // btcapnhat
             // 
+            this.btcapnhat.ForeColor = System.Drawing.Color.Blue;
             this.btcapnhat.Location = new System.Drawing.Point(30, 122);
             this.btcapnhat.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btcapnhat.Name = "btcapnhat";
@@ -215,6 +231,7 @@
             // 
             // btghi
             // 
+            this.btghi.ForeColor = System.Drawing.Color.Blue;
             this.btghi.Location = new System.Drawing.Point(30, 75);
             this.btghi.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btghi.Name = "btghi";
@@ -226,6 +243,7 @@
             // 
             // btthem
             // 
+            this.btthem.ForeColor = System.Drawing.Color.Blue;
             this.btthem.Location = new System.Drawing.Point(30, 28);
             this.btthem.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btthem.Name = "btthem";
@@ -237,11 +255,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.LavenderBlush;
             this.groupBox3.Controls.Add(this.btxoa);
             this.groupBox3.Controls.Add(this.btthem);
             this.groupBox3.Controls.Add(this.btthoat);
             this.groupBox3.Controls.Add(this.btghi);
             this.groupBox3.Controls.Add(this.btcapnhat);
+            this.groupBox3.ForeColor = System.Drawing.Color.Red;
             this.groupBox3.Location = new System.Drawing.Point(814, 85);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(179, 265);
@@ -253,6 +273,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(1025, 630);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

@@ -62,6 +62,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightYellow;
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -73,6 +74,7 @@
             this.groupBox1.Controls.Add(this.txtmaphong);
             this.groupBox1.Controls.Add(this.txttenphong);
             this.groupBox1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Red;
             this.groupBox1.Location = new System.Drawing.Point(32, 77);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(766, 267);
@@ -83,6 +85,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label5.Location = new System.Drawing.Point(16, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 23);
@@ -92,6 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label4.Location = new System.Drawing.Point(18, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 23);
@@ -101,6 +105,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label3.Location = new System.Drawing.Point(16, 176);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 23);
@@ -110,6 +115,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label2.Location = new System.Drawing.Point(16, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 23);
@@ -119,6 +125,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.label1.Location = new System.Drawing.Point(16, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 23);
@@ -161,12 +168,14 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.LightYellow;
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Red;
             this.groupBox2.Location = new System.Drawing.Point(804, 77);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(187, 267);
@@ -177,6 +186,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Blue;
             this.button5.Location = new System.Drawing.Point(29, 216);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(127, 36);
@@ -188,6 +198,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Blue;
             this.button4.Location = new System.Drawing.Point(29, 166);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(127, 36);
@@ -199,6 +210,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Blue;
             this.button3.Location = new System.Drawing.Point(29, 124);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 36);
@@ -210,6 +222,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Blue;
             this.button2.Location = new System.Drawing.Point(29, 34);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 35);
@@ -221,6 +234,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Location = new System.Drawing.Point(29, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 36);
@@ -232,10 +246,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(396, 28);
+            this.label6.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label6.Font = new System.Drawing.Font("Cambria", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(389, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(223, 33);
+            this.label6.Size = new System.Drawing.Size(272, 40);
             this.label6.TabIndex = 10;
             this.label6.Text = "QUẢN LÝ PHÒNG";
             // 
@@ -246,7 +262,7 @@
             this.dgdanhsach.Name = "dgdanhsach";
             this.dgdanhsach.RowHeadersWidth = 51;
             this.dgdanhsach.RowTemplate.Height = 24;
-            this.dgdanhsach.Size = new System.Drawing.Size(959, 216);
+            this.dgdanhsach.Size = new System.Drawing.Size(959, 255);
             this.dgdanhsach.TabIndex = 11;
             this.dgdanhsach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgdanhsach_CellContentClick);
             // 
@@ -254,6 +270,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1025, 630);
             this.Controls.Add(this.dgdanhsach);
             this.Controls.Add(this.label6);
