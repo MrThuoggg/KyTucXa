@@ -196,9 +196,9 @@
             this.label1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 23);
+            this.label1.Size = new System.Drawing.Size(166, 23);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Thống kê tổng số phòng:";
+            this.label1.Text = "Thống kê  phòng:";
             // 
             // label6
             // 
