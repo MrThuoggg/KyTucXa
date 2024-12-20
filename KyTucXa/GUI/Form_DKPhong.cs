@@ -49,34 +49,42 @@ namespace KyTucXa.GUI
             dt = DangKyPhongDAO.MaDKPhongLonNhat();
             string madk = dt.Rows[0][0].ToString();
             txtMaDK.Text = "DK" + (int.Parse(madk.Substring(madk.Length - 1)) + 1).ToString("000");
+            DataTable ms = new DataTable();
+            ms = SinhVienDao.MaSinhVienLonNhat();
+            string masv = dt.Rows[0][0].ToString();
+            txtMaSV.Text = "SV"+ (int.Parse(masv.Substring(masv.Length - 1)) + 1).ToString("000");
+            txtMaPhong.Text = "P";
             txthoten.Text = "";
-            txtTenPhong.Text = "";
+            txtTenPhong.Text = "Phòng ";
             
         }
 
         private void btGhi_Click(object sender, EventArgs e)
         {
-            DangKyPhongDTO dk = new DangKyPhongDTO
-            {
-                madk = txtMaDK.Text,
-                masv = txthoten.Text,
-                maphong = txtMaPhong.Text,
-                ngaybd = dtNBD.Value.ToString("yyyy-MM-dd"),
-                ngaydk = dtNDK.Value.ToString("yyyy-MM-dd"),
-                ngaykt = dtNgayKT.Value.ToString("yyyy-MM-dd")
-            };
+            DangKyPhongDTO dk = new DangKyPhongDTO();
+            
+            dk.madk = txtMaDK.Text;
+            dk.masv = txtMaSV.Text;
+            dk.hoten = txthoten.Text;
+            dk.maphong = txtMaPhong.Text;
+            dk.tenphong = txtTenPhong.Text;
+            dk.ngaybd = dtNBD.Value.ToString("yyyy-MM-dd");
+            dk.ngaydk = dtNDK.Value.ToString("yyyy-MM-dd");
+            dk.ngaykt = dtNgayKT.Value.ToString("yyyy-MM-dd");
             DangKyPhong.DangKy(dk);
-            ThongTinDKPhong();
+            ThongTinDKPhong();     
         }
 
 
         private void btCapNhat_Click(object sender, EventArgs e)
         {
             DangKyPhongDTO dk = new DangKyPhongDTO();
+
             dk.madk = txtMaDK.Text;
-            dk.masv = txthoten.Text;
+            dk.masv = txtMaSV.Text;
+            dk.hoten = txthoten.Text;
             dk.maphong = txtMaPhong.Text;
-            dk.maphong = txtTenPhong.Text;
+            dk.tenphong = txtTenPhong.Text;
             dk.ngaybd = dtNBD.Value.ToString("yyyy-MM-dd");
             dk.ngaydk = dtNDK.Value.ToString("yyyy-MM-dd");
             dk.ngaykt = dtNgayKT.Value.ToString("yyyy-MM-dd");
@@ -90,6 +98,12 @@ namespace KyTucXa.GUI
             dk.madk = txtMaDK.Text;
             DangKyPhong.XoaDangKy(dk);
             ThongTinDKPhong();
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Form_Menu menu = new Form_Menu();
+            menu.ShowDialog();
         }
     }
 }

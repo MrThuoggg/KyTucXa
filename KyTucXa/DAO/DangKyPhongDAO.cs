@@ -35,7 +35,7 @@ namespace KyTucXa.DAO
         }
         public static void Capnhatdangky(DangKyPhongDTO dk)
         {
-            string sql = "UPDATE DangKyPhong SET MaSV = N'" + dk.masv + "',NgayDK = N'" + dk.ngaydk + "',NgayBD = N'" + dk.ngaybd + "',NgayKT = N'" + dk.ngaykt + "',MaPhong = N'" + dk.maphong + "' WHERE MaDK = '" + dk.madk + "';";
+            string sql = "UPDATE DangKyPhong SET MaSV = '"+dk.masv+"',HoTen = N'"+dk.hoten+"', MaPhong = '"+dk.maphong+"',TenPhong = N'"+dk.tenphong+"',NgayDK='"+dk.ngaydk+"',NgayBD='"+dk.ngaybd+"',NgayKT='"+dk.ngaykt+"' Where MaDK = '"+dk.madk+"';";
             KetNoiCSDL.ThucThiTruyVan(sql);
         }
         public static void XoaDangKyPhong(DangKyPhongDTO dk)
